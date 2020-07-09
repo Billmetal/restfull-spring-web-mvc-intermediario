@@ -1,10 +1,12 @@
 package br.com.digitalinnovationone.example.restful.dto;
 
+import br.com.digitalinnovationone.example.restful.enums.Raca;
+
 public class Soldado {
 	
 	private String cpf;
 	private String nome;
-	private String raca;
+	private Raca raca;
 	private String arma;
 	
 	public String getCpf() {
@@ -19,10 +21,10 @@ public class Soldado {
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
-	public String getRaca() {
+	public Raca getRaca() {
 		return raca;
 	}
-	public void setRaca(String raca) {
+	public void setRaca(Raca raca) {
 		this.raca = raca;
 	}
 	public String getArma() {
